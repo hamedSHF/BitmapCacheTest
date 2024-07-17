@@ -13,43 +13,43 @@
                     <DoubleAnimation
             Storyboard.TargetName="bitmapCacheCanvas" 
             Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleX)"
-            From="0.5" To="4.0" Duration="0:0:4" 
+            From="0.5" To="2.0" Duration="0:0:4" 
             AutoReverse="True" RepeatBehavior="Forever" />
                     <DoubleAnimation
             Storyboard.TargetName="bitmapCacheCanvas" 
             Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleY)"
-            From="0.5" To="4.0" Duration="0:0:4" 
+            From="0.5" To="2.0" Duration="0:0:10" 
             AutoReverse="True" RepeatBehavior="Forever" />
                     <DoubleAnimation
             Storyboard.TargetName="bitmapCacheCanvas2" 
             Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleX)"
-            From="0.5" To="4.0" Duration="0:0:4" 
+            From="0.5" To="2.0" Duration="0:0:10" 
             AutoReverse="True" RepeatBehavior="Forever" />
                     <DoubleAnimation
             Storyboard.TargetName="bitmapCacheCanvas2" 
             Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleY)"
-            From="0.5" To="4.0" Duration="0:0:4" 
+            From="0.5" To="2.0" Duration="0:0:10" 
             AutoReverse="True" RepeatBehavior="Forever" />
                     <DoubleAnimation
             Storyboard.TargetName="bitmapCacheCanvas3" 
             Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleX)"
-            From="0.5" To="4.0" Duration="0:0:4" 
+            From="0.5" To="2.0" Duration="0:0:10" 
             AutoReverse="True" RepeatBehavior="Forever" />
                     <DoubleAnimation
             Storyboard.TargetName="bitmapCacheCanvas3" 
             Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleY)"
-            From="0.5" To="4.0" Duration="0:0:4" 
+            From="0.5" To="2.0" Duration="0:0:10" 
             AutoReverse="True" RepeatBehavior="Forever" />
                     <DoubleAnimation
-Storyboard.TargetName="bitmapCacheCanvas4" 
-Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleX)"
-From="0.5" To="4.0" Duration="0:0:4" 
-AutoReverse="True" RepeatBehavior="Forever" />
+            Storyboard.TargetName="bitmapCacheCanvas4" 
+            Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleX)"
+            From="0.5" To="2.0" Duration="0:0:10" 
+            AutoReverse="True" RepeatBehavior="Forever" />
                     <DoubleAnimation
-Storyboard.TargetName="bitmapCacheCanvas4" 
-Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleY)"
-From="0.5" To="4.0" Duration="0:0:4" 
-AutoReverse="True" RepeatBehavior="Forever" />
+            Storyboard.TargetName="bitmapCacheCanvas4" 
+            Storyboard.TargetProperty="(Canvas.RenderTransform).(ScaleTransform.ScaleY)"
+            From="0.5" To="2.0" Duration="0:0:10" 
+            AutoReverse="True" RepeatBehavior="Forever" />
                 </Storyboard>
             </BeginStoryboard>
         </EventTrigger>
@@ -59,18 +59,18 @@ AutoReverse="True" RepeatBehavior="Forever" />
             <Canvas Name='Popcan_xpr'>
                 <Canvas x:Name="bitmapCacheCanvas">
                     <Canvas.RenderTransform>
-                        <ScaleTransform  CenterX="500" CenterY="900"/>
+                        <ScaleTransform  CenterX="200" CenterY="300"/>
                     </Canvas.RenderTransform>
 
                     <!-- //////////////////////////////////////////////////////////////// -->
                     <!-- // The following XAML creates a BitmapCache with default      // -->
                     <!-- // properties and assigns it as the CacheMode for the canvas. // -->
                     <!-- //////////////////////////////////////////////////////////////// -->
-                    <!--<Canvas.CacheMode>
+                    <Canvas.CacheMode>
                         <BitmapCache EnableClearType="False" 
-                                     RenderAtScale="1" 
+                                     RenderAtScale="10" 
                                      SnapsToDevicePixels="False"  />
-                    </Canvas.CacheMode>-->
+                    </Canvas.CacheMode>
 
                     <Canvas Name='Layer_2' Width='1280' Height='1024'>
                         <Path Canvas.Left='191.32' Canvas.Top='738.375' Data='F1 M 0,158.843L 81.744,196.619L 108.992,206.682L 126.332,216.126L 138.717,221.39L 210.553,262.107L 265.049,256.379L 274.957,249.412L 304.682,246.78L 314.591,239.194L 351.747,235.169L 388.903,223.403L 413.674,222.783L 423.583,213.649L 458.262,213.185L 463.216,205.908L 492.941,202.347L 502.85,194.452L 537.529,192.903L 547.437,184.079L 582.116,183.305L 592.025,173.861L 626.704,173.396L 636.612,163.952L 671.292,163.488L 681.2,154.044L 715.879,153.58L 725.788,144.136L 760.467,143.207L 775.33,130.512L 810.009,128.189L 819.917,119.984L 854.596,117.352L 864.505,111.005L 909.093,103.419L 917.608,79.5765L 890.05,47.3743L 849.642,30.9636L 822.394,26.0094L 795.146,16.7203L 710.925,0.464417L 611.842,0L 572.208,6.9668L 562.3,13.624L 530.098,18.5781L 502.85,28.9509L 473.124,30.4991L 463.216,39.6334L 433.491,40.4075L 418.628,54.0315L 383.949,56.6635L 374.041,63.011L 324.499,71.3712L 314.591,78.0283L 227.892,98.4644L 200.644,107.753L 161.011,118.281L 136.24,119.674L 126.332,128.809L 101.561,129.428L 91.6524,138.872L 52.0189,139.956L 37.1564,152.186L 2.47708,156.057L 0,158.843'>
@@ -1008,11 +1008,11 @@ AutoReverse="True" RepeatBehavior="Forever" />
                     <!-- // The following XAML creates a BitmapCache with default      // -->
                     <!-- // properties and assigns it as the CacheMode for the canvas. // -->
                     <!-- //////////////////////////////////////////////////////////////// -->
-                    <!--<Canvas.CacheMode>
+                    <Canvas.CacheMode>
                         <BitmapCache EnableClearType="False" 
-                                     RenderAtScale="1" 
+                                     RenderAtScale="10" 
                                      SnapsToDevicePixels="False"  />
-                    </Canvas.CacheMode>-->
+                    </Canvas.CacheMode>
 
                     <Canvas Name='Layer_22' Width='1280' Height='1024'>
                         <Path Canvas.Left='191.32' Canvas.Top='738.375' Data='F1 M 0,158.843L 81.744,196.619L 108.992,206.682L 126.332,216.126L 138.717,221.39L 210.553,262.107L 265.049,256.379L 274.957,249.412L 304.682,246.78L 314.591,239.194L 351.747,235.169L 388.903,223.403L 413.674,222.783L 423.583,213.649L 458.262,213.185L 463.216,205.908L 492.941,202.347L 502.85,194.452L 537.529,192.903L 547.437,184.079L 582.116,183.305L 592.025,173.861L 626.704,173.396L 636.612,163.952L 671.292,163.488L 681.2,154.044L 715.879,153.58L 725.788,144.136L 760.467,143.207L 775.33,130.512L 810.009,128.189L 819.917,119.984L 854.596,117.352L 864.505,111.005L 909.093,103.419L 917.608,79.5765L 890.05,47.3743L 849.642,30.9636L 822.394,26.0094L 795.146,16.7203L 710.925,0.464417L 611.842,0L 572.208,6.9668L 562.3,13.624L 530.098,18.5781L 502.85,28.9509L 473.124,30.4991L 463.216,39.6334L 433.491,40.4075L 418.628,54.0315L 383.949,56.6635L 374.041,63.011L 324.499,71.3712L 314.591,78.0283L 227.892,98.4644L 200.644,107.753L 161.011,118.281L 136.24,119.674L 126.332,128.809L 101.561,129.428L 91.6524,138.872L 52.0189,139.956L 37.1564,152.186L 2.47708,156.057L 0,158.843'>
@@ -1943,18 +1943,18 @@ AutoReverse="True" RepeatBehavior="Forever" />
             <Canvas Name='Popcan_xpr3'>
                 <Canvas x:Name="bitmapCacheCanvas3">
                     <Canvas.RenderTransform>
-                        <ScaleTransform CenterY="400"/>
+                        <ScaleTransform CenterY="300"/>
                     </Canvas.RenderTransform>
 
                     <!-- //////////////////////////////////////////////////////////////// -->
                     <!-- // The following XAML creates a BitmapCache with default      // -->
                     <!-- // properties and assigns it as the CacheMode for the canvas. // -->
                     <!-- //////////////////////////////////////////////////////////////// -->
-                    <!--<Canvas.CacheMode>
+                    <Canvas.CacheMode>
                         <BitmapCache EnableClearType="False" 
-                                     RenderAtScale="1" 
+                                     RenderAtScale="10" 
                                      SnapsToDevicePixels="False"  />
-                    </Canvas.CacheMode>-->
+                    </Canvas.CacheMode>
 
                     <Canvas Name='Layer_23' Width='1280' Height='1024'>
                         <Path Canvas.Left='191.32' Canvas.Top='738.375' Data='F1 M 0,158.843L 81.744,196.619L 108.992,206.682L 126.332,216.126L 138.717,221.39L 210.553,262.107L 265.049,256.379L 274.957,249.412L 304.682,246.78L 314.591,239.194L 351.747,235.169L 388.903,223.403L 413.674,222.783L 423.583,213.649L 458.262,213.185L 463.216,205.908L 492.941,202.347L 502.85,194.452L 537.529,192.903L 547.437,184.079L 582.116,183.305L 592.025,173.861L 626.704,173.396L 636.612,163.952L 671.292,163.488L 681.2,154.044L 715.879,153.58L 725.788,144.136L 760.467,143.207L 775.33,130.512L 810.009,128.189L 819.917,119.984L 854.596,117.352L 864.505,111.005L 909.093,103.419L 917.608,79.5765L 890.05,47.3743L 849.642,30.9636L 822.394,26.0094L 795.146,16.7203L 710.925,0.464417L 611.842,0L 572.208,6.9668L 562.3,13.624L 530.098,18.5781L 502.85,28.9509L 473.124,30.4991L 463.216,39.6334L 433.491,40.4075L 418.628,54.0315L 383.949,56.6635L 374.041,63.011L 324.499,71.3712L 314.591,78.0283L 227.892,98.4644L 200.644,107.753L 161.011,118.281L 136.24,119.674L 126.332,128.809L 101.561,129.428L 91.6524,138.872L 52.0189,139.956L 37.1564,152.186L 2.47708,156.057L 0,158.843'>
@@ -2881,22 +2881,22 @@ AutoReverse="True" RepeatBehavior="Forever" />
                 </Canvas>
             </Canvas>
         </Canvas>
-        <Canvas x:Name="demoCanvas4" Canvas.Top="10" Canvas.Left="100">
+        <Canvas x:Name="demoCanvas4" Canvas.Top="10" Canvas.Left="800">
             <Canvas Name='Popcan_xpr4'>
                 <Canvas x:Name="bitmapCacheCanvas4">
                     <Canvas.RenderTransform>
-                        <ScaleTransform CenterY="400"/>
+                        <ScaleTransform CenterY="300"/>
                     </Canvas.RenderTransform>
 
                     <!-- //////////////////////////////////////////////////////////////// -->
                     <!-- // The following XAML creates a BitmapCache with default      // -->
                     <!-- // properties and assigns it as the CacheMode for the canvas. // -->
                     <!-- //////////////////////////////////////////////////////////////// -->
-                    <!--<Canvas.CacheMode>
+                    <Canvas.CacheMode>
                         <BitmapCache EnableClearType="False" 
-                                     RenderAtScale="1" 
+                                     RenderAtScale="10" 
                                      SnapsToDevicePixels="False"  />
-                    </Canvas.CacheMode>-->
+                    </Canvas.CacheMode>
 
                     <Canvas Name='Layer_24' Width='1280' Height='1024'>
                         <Path Canvas.Left='191.32' Canvas.Top='738.375' Data='F1 M 0,158.843L 81.744,196.619L 108.992,206.682L 126.332,216.126L 138.717,221.39L 210.553,262.107L 265.049,256.379L 274.957,249.412L 304.682,246.78L 314.591,239.194L 351.747,235.169L 388.903,223.403L 413.674,222.783L 423.583,213.649L 458.262,213.185L 463.216,205.908L 492.941,202.347L 502.85,194.452L 537.529,192.903L 547.437,184.079L 582.116,183.305L 592.025,173.861L 626.704,173.396L 636.612,163.952L 671.292,163.488L 681.2,154.044L 715.879,153.58L 725.788,144.136L 760.467,143.207L 775.33,130.512L 810.009,128.189L 819.917,119.984L 854.596,117.352L 864.505,111.005L 909.093,103.419L 917.608,79.5765L 890.05,47.3743L 849.642,30.9636L 822.394,26.0094L 795.146,16.7203L 710.925,0.464417L 611.842,0L 572.208,6.9668L 562.3,13.624L 530.098,18.5781L 502.85,28.9509L 473.124,30.4991L 463.216,39.6334L 433.491,40.4075L 418.628,54.0315L 383.949,56.6635L 374.041,63.011L 324.499,71.3712L 314.591,78.0283L 227.892,98.4644L 200.644,107.753L 161.011,118.281L 136.24,119.674L 126.332,128.809L 101.561,129.428L 91.6524,138.872L 52.0189,139.956L 37.1564,152.186L 2.47708,156.057L 0,158.843'>

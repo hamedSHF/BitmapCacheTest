@@ -30,7 +30,8 @@
                 <DataTemplate DataType="{x:Type models:SampleMetric}">
                     <Border Background="Gray">
                         <Border.CacheMode>
-                            <BitmapCache/>
+                            <BitmapCache EnableClearType="True"
+                                         SnapsToDevicePixels="True"/>
                         </Border.CacheMode>
                         <Grid>
                             <Grid.RowDefinitions>
@@ -43,17 +44,14 @@
                             <ItemsControl Grid.Row="2" ItemsSource="{Binding Points}">
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
-                                        <StackPanel Orientation="Horizontal"/>
+                                        <StackPanel Orientation="Horizontal" CacheMode="BitmapCache"/>
                                     </ItemsPanelTemplate>
                                 </ItemsControl.ItemsPanel>
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate DataType="{x:Type models:DataPoint}">
-                                        <Button Height="5">
+                                        <Button Height="10" Width="1000">
                                             <Button.ToolTip>
                                                 <StackPanel>
-                                                    <StackPanel.CacheMode>
-                                                        <BitmapCache/>
-                                                    </StackPanel.CacheMode>
                                                     <StackPanel Margin="5" Orientation="Horizontal">
                                                         <Ellipse Width="30" Height="10" Fill="Red"/>
                                                         <TextBlock Text="{Binding Time}"/>
